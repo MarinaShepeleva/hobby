@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.min.css?_v=20220212205458">
-	<title>Оплата и доставка</title>
+	<title>товары для творчества</title>
 </head>
 
 <body>
@@ -238,159 +238,575 @@
 							<a href="./index.html" class="breadcrumbs-page__link">Главная</a>
 						</li>
 						<li class="breadcrumbs-page__item">
-							<span class="breadcrumbs-page__curent">Оплата и доставка</span>
+							<a href="./catalog.html" class="breadcrumbs-page__link">Каталог</a>
+						</li>
+						<li class="breadcrumbs-page__item">
+							<span class="breadcrumbs-page__curent">товары для творчества</span>
 						</li>
 					</ul>
 				</div>
 			</nav>
-			<div class="page__container">
-				<div class="page__content content-page">
-					<article class="content-page__catalog-list catalog-list">
-						<div class="catalog-list__title">
-							<h1>Каталог</h1>
+			<div class="catalog-page__container">
+				<div class="page__catalog catalog-page">
+
+					<div class="catalog-page__price-filtr">
+						<button class="catalog-page__price-descending" type="button"><span>Цена</span>
+							<svg width="11" height="11">
+								<use xlink:href="images/icons/icons.svg#Arrow"></use>
+							</svg>
+						</button>
+						<button class="catalog-page__price-ascending" type="button"><span>Цена</span>
+							<svg width="11" height="11">
+								<use xlink:href="images/icons/icons.svg#Arrow"></use>
+							</svg>
+						</button>
+					</div>
+
+					<div class="catalog-page__inner">
+						<div class="catalog-page__filtr">
+							<div data-spollers class="product-filtr">
+								<div class="product-filtr__item">
+									<button class="product-filtr__title" type="button" data-spoller>
+										<span>Тип изделий</span>
+										<svg width="30" height="30">
+											<use xlink:href="images/icons/icons.svg#slider-arrow"></use>
+										</svg>
+									</button>
+									<div class="product-filtr__body">
+										<div class="product-filtr__checkbox checkbox">
+											<input id="a_1" data-error="Ошибка" class="checkbox__inp" type="checkbox" value="1" name="form[]">
+											<label for="a_1" class="checkbox__label">
+												<span class="checkbox__text">Шпагат, шнуры, веревки</span>
+											</label>
+										</div>
+										<div class="product-filtr__checkbox checkbox">
+											<input id="a_2" data-error="Ошибка" class="checkbox__inp" type="checkbox" value="1" name="form[]">
+											<label for="a_2" class="checkbox__label">
+												<span class="checkbox__text">Кольца, бусины</span>
+											</label>
+										</div>
+										<div class="product-filtr__checkbox checkbox">
+											<input id="a_3" data-error="Ошибка" class="checkbox__inp" type="checkbox" value="1" name="form[]">
+											<label for="a_3" class="checkbox__label">
+												<span class="checkbox__text">Джут</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="product-filtr__item">
+									<button class="product-filtr__title" type="button" data-spoller>
+										<span>Состав</span>
+										<svg width="30" height="30">
+											<use xlink:href="images/icons/icons.svg#slider-arrow"></use>
+										</svg>
+									</button>
+									<div class="product-filtr__body">
+										<div class="product-filtr__checkbox checkbox">
+											<input id="b_1" data-error="Ошибка" class="checkbox__inp" type="checkbox" value="1" name="form[]">
+											<label for="b_1" class="checkbox__label">
+												<span class="checkbox__text">Хлопок</span>
+											</label>
+										</div>
+										<div class="product-filtr__checkbox checkbox">
+											<input id="b_2" data-error="Ошибка" class="checkbox__inp" type="checkbox" value="1" name="form[]">
+											<label for="b_2" class="checkbox__label">
+												<span class="checkbox__text">Синтетика</span>
+											</label>
+										</div>
+										<div class="product-filtr__checkbox checkbox">
+											<input id="b_3" data-error="Ошибка" class="checkbox__inp" type="checkbox" value="1" name="form[]">
+											<label for="b_3" class="checkbox__label">
+												<span class="checkbox__text">С сердечником</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="product-filtr__item">
+									<button class="product-filtr__title" type="button" data-spoller>
+										<span>Диаметр</span>
+										<svg width="30" height="30">
+											<use xlink:href="images/icons/icons.svg#slider-arrow"></use>
+										</svg>
+									</button>
+									<div class="product-filtr__body">
+										<div class="product-filtr__checkbox checkbox">
+											<input id="c_1" data-error="Ошибка" class="checkbox__inp" type="checkbox" value="1" name="form[]">
+											<label for="c_1" class="checkbox__label">
+												<span class="checkbox__text">3 мм</span>
+											</label>
+										</div>
+										<div class="product-filtr__checkbox checkbox">
+											<input id="c_2" data-error="Ошибка" class="checkbox__inp" type="checkbox" value="1" name="form[]">
+											<label for="c_2" class="checkbox__label">
+												<span class="checkbox__text">4 мм</span>
+											</label>
+										</div>
+										<div class="product-filtr__checkbox checkbox">
+											<input id="c_3" data-error="Ошибка" class="checkbox__inp" type="checkbox" value="1" name="form[]">
+											<label for="c_3" class="checkbox__label">
+												<span class="checkbox__text">4.5 мм</span>
+											</label>
+										</div>
+										<div class="product-filtr__checkbox checkbox">
+											<input id="c_4" data-error="Ошибка" class="checkbox__inp" type="checkbox" value="1" name="form[]">
+											<label for="c_4" class="checkbox__label">
+												<span class="checkbox__text">5 мм</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="product-filtr__item">
+									<button class="product-filtr__title" type="button" data-spoller>
+										<span>Производитель</span>
+										<svg width="30" height="30">
+											<use xlink:href="images/icons/icons.svg#slider-arrow"></use>
+										</svg>
+									</button>
+									<div class="product-filtr__body">
+										<div class="product-filtr__checkbox checkbox">
+											<input id="d_1" data-error="Ошибка" class="checkbox__inp" type="checkbox" value="1" name="form[]">
+											<label for="d_1" class="checkbox__label">
+												<span class="checkbox__text">Macrametr</span>
+											</label>
+										</div>
+										<div class="product-filtr__checkbox checkbox">
+											<input id="d_2" data-error="Ошибка" class="checkbox__inp" type="checkbox" value="1" name="form[]">
+											<label for="d_2" class="checkbox__label">
+												<span class="checkbox__text">Зефирка</span>
+											</label>
+										</div>
+										<div class="product-filtr__checkbox checkbox">
+											<input id="d_3" data-error="Ошибка" class="checkbox__inp" type="checkbox" value="1" name="form[]">
+											<label for="d_3" class="checkbox__label">
+												<span class="checkbox__text">Гамма</span>
+											</label>
+										</div>
+										<div class="product-filtr__checkbox checkbox">
+											<input id="d_4" data-error="Ошибка" class="checkbox__inp" type="checkbox" value="1" name="form[]">
+											<label for="d_4" class="checkbox__label">
+												<span class="checkbox__text">Сибшнур</span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="filtr__btn">
+								<button class="filtr__button" type="button">
+									<span>Показать</span>
+								</button>
+								<button class="filtr__button" type="button">
+									<span>Очистить</span>
+								</button>
+							</div>
+							<div class="filtr__text">
+								<span>Подобрано 6 товаров</span>
+							</div>
 						</div>
-						<ul class="catalog-list__body">
-							<li class="catalog-list__item">
-								<a href="catalog_makrame.html">
-									<div class="catalog-list__subtitle">
-										<span>Макраме</span>
+
+						<div class="catalog-page__cards cards-catalog">
+							<div class="cards-catalog__body">
+								<article class="cards-catalog__card product-card">
+									<div class="product-card__icons">
+										<a href="#">
+											<svg class="product-card__favorites" width="17" height="17">
+												<use xlink:href="images/icons/icons.svg#favorites" fill-rule="nonzero">
+												</use>
+											</svg>
+										</a>
+										<a href="#">
+											<div class="product-card__more">
+												<span></span>
+												<span></span>
+												<span></span>
+											</div>
+										</a>
 									</div>
-									<div class="catalog-list__image">
-										<picture><source srcset="images/catalog/card-1.webp" type="image/webp"><img src="images/catalog/card-1.png?_v=1644688498446" alt="картинка"></picture>
+									<div class="product-card__img">
+										<a href="catalog_makrame_product.html"><picture><source srcset="images/catalog/macrame-1.webp" type="image/webp"><img src="images/catalog/macrame-1.jpg?_v=1644688498446" alt="картинка"></picture></a>
 									</div>
-								</a>
-							</li>
-							<li class="catalog-list__item">
-								<a href="catalog_knitting.html">
-									<div class="catalog-list__subtitle">
-										<span>Вязание</span>
+
+									<div class="product-card__title">
+										<p>Шпагат Macrametr 4 мм, 100 нитей</p>
 									</div>
-									<div class="catalog-list__image">
-										<picture><source srcset="images/catalog/card-2.webp" type="image/webp"><img src="images/catalog/card-2.png?_v=1644688498446" alt="картинка"></picture>
+									<div class="product-card__color color">
+										<ul class="color__list">
+											<li class="color__item">
+												<a class="color__link" href="#"></a>
+											</li>
+											<li class="color__item">
+												<a class="color__link" href="#"></a>
+											</li>
+											<li class="color__item">
+												<a class="color__link" href="#"></a>
+											</li>
+											<li class="color__item">
+												<a class="color__link" href="#"></a>
+											</li>
+										</ul>
+										<div class="color__item-more">
+											<a class="color__link-more" href="#"><span>+5</span></a>
+										</div>
 									</div>
-								</a>
-							</li>
-							<li class="catalog-list__item">
-								<a href="#">
-									<div class="catalog-list__subtitle">
-										<span>Вышивка</span>
+									<div class="product-card__price price">
+										<span>332 ₽</span>
 									</div>
-									<div class="catalog-list__image">
-										<picture><source srcset="images/catalog/knitting-4.webp" type="image/webp"><img src="images/catalog/knitting-4.png?_v=1644688498446" alt="картинка"></picture>
+									<div class="product-card__rating rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating">
+												<input type="radio" class="rating__item" value="2" name="rating">
+												<input type="radio" class="rating__item" value="3" name="rating">
+												<input type="radio" class="rating__item" value="4" name="rating">
+												<input type="radio" class="rating__item" value="5" name="rating">
+											</div>
+										</div>
+										<div class="rating__value">3.5</div>
 									</div>
-								</a>
-							</li>
-							<li class="catalog-list__item">
-								<a href="#">
-									<div class="catalog-list__subtitle">
-										<span>Лепка</span>
+									<div class="product-card__btn">
+										<button class="product-card__button" type="button">
+											<svg width="11" height="11">
+												<use xlink:href="images/icons/icons.svg#cart"></use>
+											</svg>
+											<span>В корзину</span>
+										</button>
 									</div>
-									<div class="catalog-list__image">
-										<picture><source srcset="images/catalog/card-2.webp" type="image/webp"><img src="images/catalog/card-2.png?_v=1644688498446" alt="картинка"></picture>
+								</article>
+								<article class="cards-catalog__card product-card">
+									<div class="product-card__icons">
+										<a href="#">
+											<svg class="product-card__favorites" width="17" height="17">
+												<use xlink:href="images/icons/icons.svg#favorites" fill-rule="nonzero">
+												</use>
+											</svg>
+										</a>
+										<a href="#">
+											<div class="product-card__more">
+												<span></span>
+												<span></span>
+												<span></span>
+											</div>
+										</a>
 									</div>
-								</a>
-							</li>
-							<li class="catalog-list__item">
-								<a href="#">
-									<div class="catalog-list__subtitle">
-										<span>Инструменты</span>
+									<div class="product-card__img">
+										<a href="#"><picture><source srcset="images/catalog/macrame-2.webp" type="image/webp"><img src="images/catalog/macrame-2.jpg?_v=1644688498446" alt="картинка"></picture></a>
 									</div>
-									<div class="catalog-list__image">
-										<picture><source srcset="images/catalog/knitting-4.webp" type="image/webp"><img src="images/catalog/knitting-4.png?_v=1644688498446" alt="картинка"></picture>
+
+									<div class="product-card__title">
+										<p>Шпагат джутовый Сибшнур 500 м</p>
 									</div>
-								</a>
-							</li>
-							<li class="catalog-list__item">
-								<a href="#">
-									<div class="catalog-list__subtitle">
-										<span>Упаковка</span>
+									<div class="product-card__color color">
+										<ul class="color__list">
+											<li class="color__item">
+												<a class="color__link" href="#"></a>
+											</li>
+											<li class="color__item">
+												<a class="color__link" href="#"></a>
+											</li>
+											<li class="color__item">
+												<a class="color__link" href="#"></a>
+											</li>
+
+										</ul>
+
 									</div>
-									<div class="catalog-list__image">
-										<picture><source srcset="images/catalog/card-2.webp" type="image/webp"><img src="images/catalog/card-2.png?_v=1644688498446" alt="картинка"></picture>
+									<div class="product-card__price price">
+										<span class="price__common">422 ₽</span>
+										<span class="price__discount">385 ₽</span>
 									</div>
-								</a>
-							</li>
-							<li class="catalog-list__item">
-								<a href="#">
-									<div class="catalog-list__subtitle">
-										<span>Товары
-											для творчества</span>
+									<div class="product-card__rating rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating">
+												<input type="radio" class="rating__item" value="2" name="rating">
+												<input type="radio" class="rating__item" value="3" name="rating">
+												<input type="radio" class="rating__item" value="4" name="rating">
+												<input type="radio" class="rating__item" value="5" name="rating">
+											</div>
+										</div>
+										<div class="rating__value">5</div>
 									</div>
-									<div class="catalog-list__image">
-										<picture><source srcset="images/catalog/knitting-4.webp" type="image/webp"><img src="images/catalog/knitting-4.png?_v=1644688498446" alt="картинка"></picture>
+									<div class="product-card__btn">
+										<button class="product-card__button" type="button">
+											<svg width="11" height="11">
+												<use xlink:href="images/icons/icons.svg#cart"></use>
+											</svg>
+											<span>В корзину</span>
+										</button>
 									</div>
-								</a>
-							</li>
-							<li class="catalog-list__item">
-								<a href="#">
-									<div class="catalog-list__subtitle">
-										<span>Книги</span>
+								</article>
+								<article class="cards-catalog__card product-card">
+									<div class="product-card__icons">
+										<a href="#">
+											<svg class="product-card__favorites" width="17" height="17">
+												<use xlink:href="images/icons/icons.svg#favorites" fill-rule="nonzero">
+												</use>
+											</svg>
+										</a>
+										<a href="#">
+											<div class="product-card__more">
+												<span></span>
+												<span></span>
+												<span></span>
+											</div>
+										</a>
 									</div>
-									<div class="catalog-list__image">
-										<picture><source srcset="images/catalog/card-1.webp" type="image/webp"><img src="images/catalog/card-1.png?_v=1644688498446" alt="картинка"></picture>
+									<div class="product-card__img">
+										<a href="#"><picture><source srcset="images/catalog/macrame-3.webp" type="image/webp"><img src="images/catalog/macrame-3.jpg?_v=1644688498446" alt="картинка"></picture></a>
 									</div>
-								</a>
-							</li>
-						</ul>
-					</article>
-					<section class="content-page__text-content text-content">
-						<div class="text-content__title">
-							<h1>Оплата</h1>
+
+									<div class="product-card__title">
+										<p>Пряжа Arachna "Macrame MAXI"</p>
+									</div>
+									<div class="product-card__color color">
+										<ul class="color__list">
+											<li class="color__item">
+												<a class="color__link" href="#"></a>
+											</li>
+											<li class="color__item">
+												<a class="color__link" href="#"></a>
+											</li>
+											<li class="color__item">
+												<a class="color__link" href="#"></a>
+											</li>
+											<li class="color__item">
+												<a class="color__link" href="#"></a>
+											</li>
+										</ul>
+										<div class="color__item-more">
+											<a class="color__link-more" href="#"><span>+2</span></a>
+										</div>
+									</div>
+									<div class="product-card__price price">
+										<span>1092 ₽</span>
+									</div>
+									<div class="product-card__rating rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating">
+												<input type="radio" class="rating__item" value="2" name="rating">
+												<input type="radio" class="rating__item" value="3" name="rating">
+												<input type="radio" class="rating__item" value="4" name="rating">
+												<input type="radio" class="rating__item" value="5" name="rating">
+											</div>
+										</div>
+										<div class="rating__value">4.2</div>
+									</div>
+									<div class="product-card__btn">
+										<button class="product-card__button" type="button">
+											<svg width="11" height="11">
+												<use xlink:href="images/icons/icons.svg#cart"></use>
+											</svg>
+											<span>В корзину</span>
+										</button>
+									</div>
+								</article>
+								<article class="cards-catalog__card product-card">
+									<div class="product-card__icons">
+										<a href="#">
+											<svg class="product-card__favorites" width="17" height="17">
+												<use xlink:href="images/icons/icons.svg#favorites" fill-rule="nonzero">
+												</use>
+											</svg>
+										</a>
+										<a href="#">
+											<div class="product-card__more">
+												<span></span>
+												<span></span>
+												<span></span>
+											</div>
+										</a>
+									</div>
+									<div class="product-card__img">
+										<a href="#"><picture><source srcset="images/catalog/macrame-4.webp" type="image/webp"><img src="images/catalog/macrame-4.jpg?_v=1644688498446" alt="картинка"></picture></a>
+									</div>
+
+									<div class="product-card__title">
+										<p>Пряжа Arachna "Macrame MINI"</p>
+									</div>
+									<div class="product-card__color color">
+										<ul class="color__list">
+											<li class="color__item">
+												<a class="color__link" href="#"></a>
+											</li>
+											<li class="color__item">
+												<a class="color__link" href="#"></a>
+											</li>
+											<li class="color__item">
+												<a class="color__link" href="#"></a>
+											</li>
+											<li class="color__item">
+												<a class="color__link" href="#"></a>
+											</li>
+										</ul>
+										<div class="color__item-more">
+											<a class="color__link-more" href="#"><span>+2</span></a>
+										</div>
+									</div>
+									<div class="product-card__price price">
+										<span>1053 ₽</span>
+									</div>
+									<div class="product-card__rating rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating">
+												<input type="radio" class="rating__item" value="2" name="rating">
+												<input type="radio" class="rating__item" value="3" name="rating">
+												<input type="radio" class="rating__item" value="4" name="rating">
+												<input type="radio" class="rating__item" value="5" name="rating">
+											</div>
+										</div>
+										<div class="rating__value">0</div>
+									</div>
+									<div class="product-card__btn">
+										<button class="product-card__button" type="button">
+											<svg width="11" height="11">
+												<use xlink:href="images/icons/icons.svg#cart"></use>
+											</svg>
+											<span>В корзину</span>
+										</button>
+									</div>
+								</article>
+								<article class="cards-catalog__card product-card">
+									<div class="product-card__icons">
+										<a href="#">
+											<svg class="product-card__favorites" width="17" height="17">
+												<use xlink:href="images/icons/icons.svg#favorites" fill-rule="nonzero">
+												</use>
+											</svg>
+										</a>
+										<a href="#">
+											<div class="product-card__more">
+												<span></span>
+												<span></span>
+												<span></span>
+											</div>
+										</a>
+									</div>
+									<div class="product-card__img">
+										<a href="#"><picture><source srcset="images/catalog/macrame-5.webp" type="image/webp"><img src="images/catalog/macrame-5.jpg?_v=1644688498446" alt="картинка"></picture></a>
+									</div>
+
+									<div class="product-card__title">
+										<p>Шнур "Gamma" 0.8 мм, 50 м</p>
+									</div>
+									<div class="product-card__color color">
+										<ul class="color__list">
+											<li class="color__item">
+												<a class="color__link" href="#"></a>
+											</li>
+											<li class="color__item">
+												<a class="color__link" href="#"></a>
+											</li>
+											<li class="color__item">
+												<a class="color__link" href="#"></a>
+											</li>
+											<li class="color__item">
+												<a class="color__link" href="#"></a>
+											</li>
+										</ul>
+										<div class="color__item-more">
+											<a class="color__link-more" href="#"><span>+3</span></a>
+										</div>
+									</div>
+									<div class="product-card__price price">
+										<span>852 ₽</span>
+									</div>
+									<div class="product-card__rating rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating">
+												<input type="radio" class="rating__item" value="2" name="rating">
+												<input type="radio" class="rating__item" value="3" name="rating">
+												<input type="radio" class="rating__item" value="4" name="rating">
+												<input type="radio" class="rating__item" value="5" name="rating">
+											</div>
+										</div>
+										<div class="rating__value">3.5</div>
+									</div>
+									<div class="product-card__btn">
+										<button class="product-card__button" type="button">
+											<svg width="11" height="11">
+												<use xlink:href="images/icons/icons.svg#cart"></use>
+											</svg>
+											<span>В корзину</span>
+										</button>
+									</div>
+								</article>
+								<article class="cards-catalog__card product-card">
+									<div class="product-card__icons">
+										<a href="#">
+											<svg class="product-card__favorites" width="17" height="17">
+												<use xlink:href="images/icons/icons.svg#favorites" fill-rule="nonzero">
+												</use>
+											</svg>
+										</a>
+										<a href="#">
+											<div class="product-card__more">
+												<span></span>
+												<span></span>
+												<span></span>
+											</div>
+										</a>
+									</div>
+									<div class="product-card__img">
+										<a href="#"><picture><source srcset="images/catalog/macrame-6.webp" type="image/webp"><img src="images/catalog/macrame-6.jpg?_v=1644688498446" alt="картинка"></picture></a>
+									</div>
+
+									<div class="product-card__title">
+										<p>Веревка “Zефирка” 4 мм, 100 м</p>
+									</div>
+									<div class="product-card__color color">
+										<ul class="color__list">
+											<li class="color__item">
+												<a class="color__link" href="#"></a>
+											</li>
+											<li class="color__item">
+												<a class="color__link" href="#"></a>
+											</li>
+											<li class="color__item">
+												<a class="color__link" href="#"></a>
+											</li>
+											<li class="color__item">
+												<a class="color__link" href="#"></a>
+											</li>
+										</ul>
+										<div class="color__item-more">
+											<a class="color__link-more" href="#"><span>+1</span></a>
+										</div>
+									</div>
+									<div class="product-card__price price">
+										<span>617 ₽</span>
+									</div>
+									<div class="product-card__rating rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating">
+												<input type="radio" class="rating__item" value="2" name="rating">
+												<input type="radio" class="rating__item" value="3" name="rating">
+												<input type="radio" class="rating__item" value="4" name="rating">
+												<input type="radio" class="rating__item" value="5" name="rating">
+											</div>
+										</div>
+										<div class="rating__value">2</div>
+									</div>
+									<div class="product-card__btn">
+										<button class="product-card__button" type="button">
+											<svg width="11" height="11">
+												<use xlink:href="images/icons/icons.svg#cart"></use>
+											</svg>
+											<span>В корзину</span>
+										</button>
+									</div>
+								</article>
+							</div>
 						</div>
-						<div class="text-content__text">
-							<p class="text-content__text-paragraph">Оформить заказ в нашем магазине можно и без
-								регистрации, просто заполнив короткую форму
-								для
-								доставки.</p>
-
-							<p class="text-content__text-paragraph">
-								После оформления заказа доступна онлайн оплата банковской картой (оплата производится
-								через
-								защищенный онлайн сервис ПАО «Сбербанк»).
-							</p>
-
-							<p class="text-content__text-paragraph">
-								Срок сбора и обработки заказа осуществляется в течение 1-2 дней после поступления
-								оплаты.
-							</p>
-
-						</div>
-						<div class="text-content__title">
-							<h1>Доставка</h1>
-						</div>
-						<div class="text-content__text">
-							<p class="text-content__text-paragraph">Доставка заказанных товаров осуществляется в течение
-								1-2 дней по городу Якутску (в черте
-								города).</p>
-
-							<p class="text-content__text-paragraph">Стоимость доставки по городу 150-250 рублей
-								в зависимости от адреса доставки.</p>
-
-							<p class="text-content__text-paragraph">Бесплатная доставка от 2000 рублей в черте города.
-							</p>
-
-							<p class="text-content__text-paragraph">Отдалённые районы рассчитываются индивидуально.</p>
-
-							<p class="text-content__text-paragraph">Крупногабаритные товары (как картон) доставка
-								рассчитывается индивидуально.</p>
-
-							<p class="text-content__text-paragraph">Чтобы отслеживать информацию о заказе, просматривать
-								историю своих заказов и участвовать
-								в бонусной программе авторизируйтесь или пройдите процедуру регистрации. Будьте
-								внимательны
-								при вводе электронной почты, ФИО и адрес доставки.
-							</p>
-						</div>
-						<div class="text-content__title">
-							<h1>Самовывоз</h1>
-						</div>
-						<div class="text-content__text">
-							<p class="text-content__text-paragraph">Вы можете забрать свой заказ самостоятельно
-								по адресу:
-								г. Якутск, ул. Петра Алексеева, д. 6, ТЦ Олонхо, 2 этаж, «Хобби Арт».
-							</p>
-						</div>
-					</section>
+					</div>
 				</div>
 			</div>
 		</main>

@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css?_v=20220210041705">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220212205458">
 	<title>Макраме</title>
 </head>
 
@@ -42,15 +42,15 @@
 					</ul>
 				</div>
 			</div>
-			<div class="header__container">
-				<div class="header__body">
-					<div class="burger">
+			<div class="header__body header__container">
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu">
 						<span></span>
-					</div>
-					<nav class="header__menu menu">
+					</button>
+					<nav class="menu__body">
 						<ul class="menu__list">
 							<li class="menu__item">
-								<a class="menu__link" href="#" data-goto=".page-catalog">Каталог</a>
+								<a class="menu__link" href="index.html#catalogProduct">Каталог</a>
 							</li>
 							<li class="menu__item">
 								<a class="menu__link" href="payment-delivery.html">Оплата и доставка</a>
@@ -66,44 +66,44 @@
 							</li>
 						</ul>
 					</nav>
-					<div class="header__logo logo">
-						<a class="logo__link" href="/">
-							<picture><source srcset="images/logo.webp" type="image/webp"><img src="images/logo.png?_v=1644455825804" alt="Логотип"></picture>
-						</a>
+				</div>
+				<div class="header__logo logo">
+					<a class="logo__link" href="index.html">
+						<picture><source srcset="images/logo.webp" type="image/webp"><img src="images/logo.png?_v=1644688498446" alt="Логотип"></picture>
+					</a>
+				</div>
+				<div class="header__items buttons">
+					<div class="buttons__item item__input">
+						<input class="items__search--input" type="text" placeholder="Поиск товара">
+						<button type="button">
+							<svg class="buttons__icon" width="11" height="11">
+								<use xlink:href="images/icons/icons.svg#search"></use>
+							</svg>
+						</button>
 					</div>
-					<div class="header__items buttons">
-						<div class="buttons__item item__input">
-							<input class="items__search--input" type="text" placeholder="Поиск товара">
-							<button type="button">
-								<svg class="buttons__icon" width="11" height="11">
-									<use xlink:href="images/icons/icons.svg#search"></use>
-								</svg>
-							</button>
+					<div class="buttons__item item__button" data-popup="#popupLogin">
+						<svg class="buttons__icon" width="15" height="15">
+							<use xlink:href="images/icons/icons.svg#user"></use>
+						</svg>
+						<a class="items__login" href="#">Войти</a>
+					</div>
+					<div class="buttons__item item__button item">
+						<div class="item__favorite-value" id="item-favorite">
+							<span>4</span>
 						</div>
-						<div class="buttons__item item__button">
-							<svg class="buttons__icon" width="15" height="15">
-								<use xlink:href="images/icons/icons.svg#user"></use>
-							</svg>
-							<a class="items__entrance" href="user-cabinet.html">Войти</a>
+						<svg class="item__icon" width="14" height="14">
+							<use xlink:href="images/icons/icons.svg#favorites"></use>
+						</svg>
+						<a class="item__favorite" href="user-cabinet-favorites.html">Избранное</a>
+					</div>
+					<div class="buttons__item item__button item">
+						<div class="item__cart-value" id="item-cart">
+							<span>7</span>
 						</div>
-						<div class="buttons__item item__button item">
-							<div class="item__favorite-value" id="item-favorite">
-								<span>4</span>
-							</div>
-							<svg class="item__icon" width="14" height="14">
-								<use xlink:href="images/icons/icons.svg#favorites"></use>
-							</svg>
-							<a class="item__favorite" href="user-cabinet-favorites.html">Избранное</a>
-						</div>
-						<div class="buttons__item item__button item">
-							<div class="item__cart-value" id="item-cart">
-								<span>7</span>
-							</div>
-							<svg class="item__icon" width="11" height="11">
-								<use xlink:href="images/icons/icons.svg#cart"></use>
-							</svg>
-							<a class="item__cart" href="user-cart.html">Корзина</a>
-						</div>
+						<svg class="item__icon" width="11" height="11">
+							<use xlink:href="images/icons/icons.svg#cart"></use>
+						</svg>
+						<a class="item__cart" href="user-cart.html">Корзина</a>
 					</div>
 				</div>
 			</div>
@@ -111,11 +111,11 @@
 		<main class="page">
 			<article class="page-top page__container">
 				<div class="page-top__body">
-					<div class="slider-top__slider">
+					<div class="slider-top slider-top__slider">
 						<div class="slider-top__swiper">
 							<div class="slider-top__slide slide">
 								<div class="slide__image">
-									<picture><source srcset="images/page-top/product-1.webp" type="image/webp"><img src="images/page-top/product-1.png?_v=1644455825804" alt="Изображение товра"></picture>
+									<picture><source srcset="images/page-top/product-1.webp" type="image/webp"><img src="images/page-top/product-1.png?_v=1644688498446" alt="Изображение товра"></picture>
 								</div>
 								<div class="slide__content">
 									<div class="slide__title">
@@ -135,7 +135,7 @@
 							</div>
 							<div class="slider-top__slide slide">
 								<div class="slide__image">
-									<picture><source srcset="images/page-top/product-1.webp" type="image/webp"><img src="images/page-top/product-1.png?_v=1644455825804" alt="Изображение товра"></picture>
+									<picture><source srcset="images/page-top/product-1.webp" type="image/webp"><img src="images/page-top/product-1.png?_v=1644688498446" alt="Изображение товра"></picture>
 								</div>
 
 								<div class="slide__content">
@@ -156,7 +156,7 @@
 							</div>
 							<div class="slider-top__slide slide">
 								<div class="slide__image">
-									<picture><source srcset="images/page-top/product-1.webp" type="image/webp"><img src="images/page-top/product-1.png?_v=1644455825804" alt="Изображение товра"></picture>
+									<picture><source srcset="images/page-top/product-1.webp" type="image/webp"><img src="images/page-top/product-1.png?_v=1644688498446" alt="Изображение товра"></picture>
 								</div>
 								<div class="slide__content">
 									<div class="slide__title">
@@ -176,7 +176,7 @@
 							</div>
 							<div class="slider-top__slide slide">
 								<div class="slide__image">
-									<picture><source srcset="images/page-top/product-1.webp" type="image/webp"><img src="images/page-top/product-1.png?_v=1644455825804" alt="Изображение товра"></picture>
+									<picture><source srcset="images/page-top/product-1.webp" type="image/webp"><img src="images/page-top/product-1.png?_v=1644688498446" alt="Изображение товра"></picture>
 								</div>
 								<div class="slide__content">
 									<div class="slide__title">
@@ -196,7 +196,7 @@
 							</div>
 							<div class="slider-top__slide slide">
 								<div class="slide__image">
-									<picture><source srcset="images/page-top/product-1.webp" type="image/webp"><img src="images/page-top/product-1.png?_v=1644455825804" alt="Изображение товра"></picture>
+									<picture><source srcset="images/page-top/product-1.webp" type="image/webp"><img src="images/page-top/product-1.png?_v=1644688498446" alt="Изображение товра"></picture>
 								</div>
 								<div class="slide__content">
 									<div class="slide__title">
@@ -422,7 +422,7 @@
 										</a>
 									</div>
 									<div class="product-card__img">
-										<a href="catalog_makrame_product.html"><picture><source srcset="images/catalog/macrame-1.webp" type="image/webp"><img src="images/catalog/macrame-1.jpg?_v=1644455825804" alt="картинка"></picture></a>
+										<a href="catalog_makrame_product.html"><picture><source srcset="images/catalog/macrame-1.webp" type="image/webp"><img src="images/catalog/macrame-1.jpg?_v=1644688498446" alt="картинка"></picture></a>
 									</div>
 
 									<div class="product-card__title">
@@ -489,7 +489,7 @@
 										</a>
 									</div>
 									<div class="product-card__img">
-										<a href="#"><picture><source srcset="images/catalog/macrame-2.webp" type="image/webp"><img src="images/catalog/macrame-2.jpg?_v=1644455825804" alt="картинка"></picture></a>
+										<a href="#"><picture><source srcset="images/catalog/macrame-2.webp" type="image/webp"><img src="images/catalog/macrame-2.jpg?_v=1644688498446" alt="картинка"></picture></a>
 									</div>
 
 									<div class="product-card__title">
@@ -553,7 +553,7 @@
 										</a>
 									</div>
 									<div class="product-card__img">
-										<a href="#"><picture><source srcset="images/catalog/macrame-3.webp" type="image/webp"><img src="images/catalog/macrame-3.jpg?_v=1644455825804" alt="картинка"></picture></a>
+										<a href="#"><picture><source srcset="images/catalog/macrame-3.webp" type="image/webp"><img src="images/catalog/macrame-3.jpg?_v=1644688498446" alt="картинка"></picture></a>
 									</div>
 
 									<div class="product-card__title">
@@ -620,7 +620,7 @@
 										</a>
 									</div>
 									<div class="product-card__img">
-										<a href="#"><picture><source srcset="images/catalog/macrame-4.webp" type="image/webp"><img src="images/catalog/macrame-4.jpg?_v=1644455825804" alt="картинка"></picture></a>
+										<a href="#"><picture><source srcset="images/catalog/macrame-4.webp" type="image/webp"><img src="images/catalog/macrame-4.jpg?_v=1644688498446" alt="картинка"></picture></a>
 									</div>
 
 									<div class="product-card__title">
@@ -687,7 +687,7 @@
 										</a>
 									</div>
 									<div class="product-card__img">
-										<a href="#"><picture><source srcset="images/catalog/macrame-5.webp" type="image/webp"><img src="images/catalog/macrame-5.jpg?_v=1644455825804" alt="картинка"></picture></a>
+										<a href="#"><picture><source srcset="images/catalog/macrame-5.webp" type="image/webp"><img src="images/catalog/macrame-5.jpg?_v=1644688498446" alt="картинка"></picture></a>
 									</div>
 
 									<div class="product-card__title">
@@ -754,7 +754,7 @@
 										</a>
 									</div>
 									<div class="product-card__img">
-										<a href="#"><picture><source srcset="images/catalog/macrame-6.webp" type="image/webp"><img src="images/catalog/macrame-6.jpg?_v=1644455825804" alt="картинка"></picture></a>
+										<a href="#"><picture><source srcset="images/catalog/macrame-6.webp" type="image/webp"><img src="images/catalog/macrame-6.jpg?_v=1644688498446" alt="картинка"></picture></a>
 									</div>
 
 									<div class="product-card__title">
@@ -816,8 +816,8 @@
 				<div class="footer__content">
 					<div class="footer__body ">
 						<div class="footer__logo">
-							<a href="/">
-								<picture><source srcset="images/logo.webp" type="image/webp"><img src="images/logo.png?_v=1644455825804" alt="Логотип"></picture>
+							<a href="index.html">
+								<picture><source srcset="images/logo.webp" type="image/webp"><img src="images/logo.png?_v=1644688498446" alt="Логотип"></picture>
 							</a>
 						</div>
 						<ul class="footer__list contacts-list">
@@ -858,7 +858,7 @@
 					<nav class="footer__menu menu-footer">
 						<ul class="menu-footer__list">
 							<li class="menu-footer__item">
-								<a href="#" data-goto=".page-catalog" class="menu-footer__link">Каталог</a>
+								<a href="index.html#catalogProduct" class="menu-footer__link">Каталог</a>
 							</li>
 							<li class="menu-footer__item">
 								<a href="#" class="menu-footer__link">Акции</a>
@@ -882,10 +882,10 @@
 								<a href="about_company.html" class="menu-footer__link">О компании</a>
 							</li>
 							<li class="menu-footer__item">
-								<a href="#" class="menu-footer__link">Преимущества</a>
+								<a href="index.html#benefits" class="menu-footer__link">Преимущества</a>
 							</li>
 							<li class="menu-footer__item">
-								<a href="#" class="menu-footer__link">Личный кабинет</a>
+								<a href="user-cabinet.html" class="menu-footer__link">Личный кабинет</a>
 							</li>
 						</ul>
 					</nav>
@@ -909,16 +909,129 @@
 			</div>
 		</footer>
 	</div>
-	<!-- <div class="hystmodal" id="popup" aria-hidden="true">
-    <div class="hystmodal__wrap">
-        <div class="hystmodal__window" role="dialog" aria-modal="true">
-            <button data-hystclose class="hystmodal__close"></button>
-            <div class="popup__content">
+	<div id="popupLogin" class="login popup" aria-hidden="true">
+		<div class="login__wrapper popup-wrapper">
+			<div class="login__content popup-content">
+				<button data-close type="button" class="popup__close">
+					<svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M13.4945 13.4936C13.8461 13.142 14.323 12.9445 14.8203 12.9445C15.3176 12.9445 15.7945 13.142 16.1461 13.4936L26.7527 24.1002C27.1044 24.4519 27.3019 24.9288 27.3019 25.4261C27.3019 25.9233 27.1044 26.4003 26.7527 26.7519L16.1461 37.3585C15.7945 37.7101 15.3176 37.9077 14.8203 37.9077C14.323 37.9077 13.8461 37.7101 13.4945 37.3585C13.1429 37.0069 12.9453 36.5299 12.9453 36.0327C12.9453 35.5354 13.1429 35.0585 13.4945 34.7068L22.7753 25.4261L13.4945 16.1453C13.1429 15.7937 12.9453 15.3167 12.9453 14.8195C12.9453 14.3222 13.1429 13.8453 13.4945 13.4936Z" fill="url(#paint0_linear_116_390)" />
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M24.1014 26.7519C23.7498 26.4003 23.5522 25.9233 23.5522 25.4261C23.5522 24.9288 23.7498 24.4519 24.1014 24.1002L34.708 13.4936C35.0596 13.142 35.5366 12.9445 36.0338 12.9445C36.5311 12.9445 37.008 13.142 37.3597 13.4936C37.7113 13.8453 37.9088 14.3222 37.9088 14.8195C37.9088 15.3167 37.7113 15.7937 37.3597 16.1453L28.0789 25.4261L37.3597 34.7068C37.7113 35.0585 37.9088 35.5354 37.9088 36.0327C37.9088 36.5299 37.7113 37.0069 37.3597 37.3585C37.008 37.7101 36.5311 37.9077 36.0338 37.9077C35.5366 37.9077 35.0596 37.7101 34.708 37.3585L24.1014 26.7519Z" fill="url(#paint1_linear_116_390)" />
+						<defs>
+							<linearGradient id="paint0_linear_116_390" x1="7.5478" y1="-2.65755" x2="44.3977" y2="5.50057" gradientUnits="userSpaceOnUse">
+								<stop stop-color="#976464" />
+								<stop offset="1" stop-color="#CFA5A5" />
+							</linearGradient>
+							<linearGradient id="paint1_linear_116_390" x1="7.5478" y1="-2.65755" x2="44.3977" y2="5.50057" gradientUnits="userSpaceOnUse">
+								<stop stop-color="#976464" />
+								<stop offset="1" stop-color="#CFA5A5" />
+							</linearGradient>
+						</defs>
+					</svg>
+				</button>
+				<div class="popup__body">
+					<div class="popup__title">
+						<h3>Войти в личный кабинет</h3>
+					</div>
+					<form action="#" method="post" class="popup__form">
+						<input autocomplete="off" type="tel" name="formTel" data-error="Ошибка" placeholder="Номер телефона" class="popup__input">
+						<input autocomplete="off" type="password" name="formPass" data-error="Ошибка" placeholder="Пароль" class="popup__input">
+						<div class="popup__checkbox">
+							<input autocomplete="off" type="checkbox" name="formCheck" data-error="Ошибка" class="popup__input-check">
+							<label class="popup__label-check" for="formCheck">Запомнить меня</label>
+						</div>
+					</form>
+					<div class="popup__btn login__btn">
+						<button class="popup__button" type="button"><span>Войти</span></button>
+						<a href="#" data-popup="#popupForgotPass"><span>Забыли пароль?</span></a>
+					</div>
+					<div class="popup__reg">
+						<a href="#"><span>Вы еще не зарегистрированы?</span></a>
+						<button data-popup="#popupReg" class="popup__button" type="button"><span>регистрация</span></button>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-        </div>
-    </div>
-</div> -->
-	<script src="js/app.min.js?_v=20220210041705"></script>
+
+	<div id="popupForgotPass" class="forgotPass popup" aria-hidden="true">
+		<div class="forgotPass__wrapper popup-wrapper">
+			<div class="forgotPass__content popup-content">
+				<button data-close type="button" class="popup__close">
+					<svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M13.4945 13.4936C13.8461 13.142 14.323 12.9445 14.8203 12.9445C15.3176 12.9445 15.7945 13.142 16.1461 13.4936L26.7527 24.1002C27.1044 24.4519 27.3019 24.9288 27.3019 25.4261C27.3019 25.9233 27.1044 26.4003 26.7527 26.7519L16.1461 37.3585C15.7945 37.7101 15.3176 37.9077 14.8203 37.9077C14.323 37.9077 13.8461 37.7101 13.4945 37.3585C13.1429 37.0069 12.9453 36.5299 12.9453 36.0327C12.9453 35.5354 13.1429 35.0585 13.4945 34.7068L22.7753 25.4261L13.4945 16.1453C13.1429 15.7937 12.9453 15.3167 12.9453 14.8195C12.9453 14.3222 13.1429 13.8453 13.4945 13.4936Z" fill="url(#paint0_linear_116_390)" />
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M24.1014 26.7519C23.7498 26.4003 23.5522 25.9233 23.5522 25.4261C23.5522 24.9288 23.7498 24.4519 24.1014 24.1002L34.708 13.4936C35.0596 13.142 35.5366 12.9445 36.0338 12.9445C36.5311 12.9445 37.008 13.142 37.3597 13.4936C37.7113 13.8453 37.9088 14.3222 37.9088 14.8195C37.9088 15.3167 37.7113 15.7937 37.3597 16.1453L28.0789 25.4261L37.3597 34.7068C37.7113 35.0585 37.9088 35.5354 37.9088 36.0327C37.9088 36.5299 37.7113 37.0069 37.3597 37.3585C37.008 37.7101 36.5311 37.9077 36.0338 37.9077C35.5366 37.9077 35.0596 37.7101 34.708 37.3585L24.1014 26.7519Z" fill="url(#paint1_linear_116_390)" />
+						<defs>
+							<linearGradient id="paint0_linear_116_390" x1="7.5478" y1="-2.65755" x2="44.3977" y2="5.50057" gradientUnits="userSpaceOnUse">
+								<stop stop-color="#976464" />
+								<stop offset="1" stop-color="#CFA5A5" />
+							</linearGradient>
+							<linearGradient id="paint1_linear_116_390" x1="7.5478" y1="-2.65755" x2="44.3977" y2="5.50057" gradientUnits="userSpaceOnUse">
+								<stop stop-color="#976464" />
+								<stop offset="1" stop-color="#CFA5A5" />
+							</linearGradient>
+						</defs>
+					</svg>
+				</button>
+				<div class="popup__body">
+					<div class="popup__title">
+						<h3>Забыли пароль?</h3>
+					</div>
+					<form action="#" class="popup__form forgotPass__form">
+						<input autocomplete="off" type="email" name="formEmail" data-error="Ошибка" placeholder="Введите ваш E-mail" class="popup__input">
+						<span>На E-mail придет письмо со ссылкой на смену пароля</span>
+				</div>
+				<div class="popup__btn">
+					<button class="popup__button" type="submit"><span>Отправить</span></button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popupReg" class="registration popup" aria-hidden="true">
+		<div class="login__wrapper popup-wrapper">
+			<div class="login__content popup-content">
+				<button data-close type="button" class="popup__close">
+					<svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M13.4945 13.4936C13.8461 13.142 14.323 12.9445 14.8203 12.9445C15.3176 12.9445 15.7945 13.142 16.1461 13.4936L26.7527 24.1002C27.1044 24.4519 27.3019 24.9288 27.3019 25.4261C27.3019 25.9233 27.1044 26.4003 26.7527 26.7519L16.1461 37.3585C15.7945 37.7101 15.3176 37.9077 14.8203 37.9077C14.323 37.9077 13.8461 37.7101 13.4945 37.3585C13.1429 37.0069 12.9453 36.5299 12.9453 36.0327C12.9453 35.5354 13.1429 35.0585 13.4945 34.7068L22.7753 25.4261L13.4945 16.1453C13.1429 15.7937 12.9453 15.3167 12.9453 14.8195C12.9453 14.3222 13.1429 13.8453 13.4945 13.4936Z" fill="url(#paint0_linear_116_390)" />
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M24.1014 26.7519C23.7498 26.4003 23.5522 25.9233 23.5522 25.4261C23.5522 24.9288 23.7498 24.4519 24.1014 24.1002L34.708 13.4936C35.0596 13.142 35.5366 12.9445 36.0338 12.9445C36.5311 12.9445 37.008 13.142 37.3597 13.4936C37.7113 13.8453 37.9088 14.3222 37.9088 14.8195C37.9088 15.3167 37.7113 15.7937 37.3597 16.1453L28.0789 25.4261L37.3597 34.7068C37.7113 35.0585 37.9088 35.5354 37.9088 36.0327C37.9088 36.5299 37.7113 37.0069 37.3597 37.3585C37.008 37.7101 36.5311 37.9077 36.0338 37.9077C35.5366 37.9077 35.0596 37.7101 34.708 37.3585L24.1014 26.7519Z" fill="url(#paint1_linear_116_390)" />
+						<defs>
+							<linearGradient id="paint0_linear_116_390" x1="7.5478" y1="-2.65755" x2="44.3977" y2="5.50057" gradientUnits="userSpaceOnUse">
+								<stop stop-color="#976464" />
+								<stop offset="1" stop-color="#CFA5A5" />
+							</linearGradient>
+							<linearGradient id="paint1_linear_116_390" x1="7.5478" y1="-2.65755" x2="44.3977" y2="5.50057" gradientUnits="userSpaceOnUse">
+								<stop stop-color="#976464" />
+								<stop offset="1" stop-color="#CFA5A5" />
+							</linearGradient>
+						</defs>
+					</svg>
+				</button>
+				<div class="popup__body">
+					<div class="popup__title">
+						<h3>Регистрация</h3>
+					</div>
+					<div class="registration__form popup__form">
+						<input autocomplete="off" type="text" name="formName" data-error="Ошибка" placeholder="Имя" class="popup__input">
+						<input autocomplete="off" type="text" name="formSecondName" data-error="Ошибка" placeholder="Фамилия" class="popup__input">
+						<input autocomplete="off" type="tel" name="formSurname" data-error="Ошибка" placeholder="Отчество" class="popup__input">
+						<input autocomplete="off" type="tel" name="formTel" data-error="Ошибка" placeholder="Номер телефона" class="popup__input">
+						<input autocomplete="off" type="email" name="formEmail" data-error="Ошибка" placeholder="E-mail" class="popup__input">
+						<input autocomplete="off" type="password" name="formPass" data-error="Ошибка" placeholder="Придумайте пароль" class="popup__input">
+						<input autocomplete="off" type="password" name="formPass" data-error="Ошибка" placeholder="Повторите пароль" class="popup__input">
+						<span>Пароль должен содержать от 6 символов</span>
+					</div>
+					<div class="popup__btn registration__btn">
+						<button class="popup__button" type="button"><span>Зарегистрироваться</span></button>
+					</div>
+					<div class="registration__login">
+						<span>Есть аккаунт? </span>
+						<button data-popup="#popupLogin" class="popup__button" type="button"><span>войти</span></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20220212205458"></script>
 </body>
 
 </html>
