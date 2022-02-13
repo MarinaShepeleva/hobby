@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css?_v=20220213030129">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220213160619">
 	<title>Личный кабинет</title>
 </head>
 
@@ -69,11 +69,11 @@
 				</div>
 				<div class="header__logo logo">
 					<a class="logo__link" href="index.html">
-						<picture><source srcset="images/logo.webp" type="image/webp"><img src="images/logo.png?_v=1644710489828" alt="Логотип"></picture>
+						<picture><source srcset="images/logo.webp" type="image/webp"><img src="images/logo.png?_v=1644757579170" alt="Логотип"></picture>
 					</a>
 				</div>
 				<div class="header__items buttons">
-					<div class="buttons__item item__input">
+					<div class="buttons__item item__inp">
 						<input class="items__search--input" type="text" placeholder="Поиск товара">
 						<button type="button">
 							<svg class="buttons__icon" width="11" height="11">
@@ -81,29 +81,37 @@
 							</svg>
 						</button>
 					</div>
-					<div class="buttons__item item__button" data-popup="#popupLogin">
-						<svg class="buttons__icon" width="15" height="15">
-							<use xlink:href="images/icons/icons.svg#user"></use>
-						</svg>
-						<a class="items__login" href="#">Войти</a>
-					</div>
-					<div class="buttons__item item__button item">
-						<div class="item__favorite-value" id="item-favorite">
-							<span>4</span>
+					<div class="buttons__links">
+						<div class="buttons__item item__button">
+							<a class="buttons__link items__login" href="#" data-popup="#popupLogin">
+								<svg class="buttons__icon" width="15" height="15">
+									<use xlink:href="images/icons/icons.svg#user"></use>
+								</svg>
+								<span class="buttons__link-span">Войти</span>
+							</a>
 						</div>
-						<svg class="item__icon" width="14" height="14">
-							<use xlink:href="images/icons/icons.svg#favorites"></use>
-						</svg>
-						<a class="item__favorite" href="user-cabinet-favorites.html">Избранное</a>
-					</div>
-					<div class="buttons__item item__button item">
-						<div class="item__cart-value" id="item-cart">
-							<span>7</span>
+						<div class="buttons__item item__button item">
+							<a class="buttons__link item__favorite" href="user-cabinet-favorites.html">
+								<div class="item__favorite-value" id="item-favorite">
+									<span>4</span>
+								</div>
+								<svg class="item__icon" width="14" height="14">
+									<use xlink:href="images/icons/icons.svg#favorites"></use>
+								</svg>
+								<span class="buttons__link-span">Избранное</span>
+							</a>
 						</div>
-						<svg class="item__icon" width="11" height="11">
-							<use xlink:href="images/icons/icons.svg#cart"></use>
-						</svg>
-						<a class="item__cart" href="user-cart.html">Корзина</a>
+						<div class="buttons__item item__button item">
+							<a class="buttons__link item__cart" href="user-cart.html">
+								<div class="item__cart-value" id="item-cart">
+									<span>7</span>
+								</div>
+								<svg class="item__icon" width="11" height="11">
+									<use xlink:href="images/icons/icons.svg#cart"></use>
+								</svg>
+								<span class="buttons__link-span">Корзина</span>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -115,7 +123,7 @@
 						<div class="slider-top__swiper">
 							<div class="slider-top__slide slide">
 								<div class="slide__image">
-									<picture><source srcset="images/page-top/product-1.webp" type="image/webp"><img src="images/page-top/product-1.png?_v=1644710489828" alt="Изображение товра"></picture>
+									<picture><source srcset="images/page-top/product-1.webp" type="image/webp"><img src="images/page-top/product-1.png?_v=1644757579170" alt="Изображение товра"></picture>
 								</div>
 								<div class="slide__content">
 									<div class="slide__title">
@@ -135,7 +143,7 @@
 							</div>
 							<div class="slider-top__slide slide">
 								<div class="slide__image">
-									<picture><source srcset="images/page-top/product-1.webp" type="image/webp"><img src="images/page-top/product-1.png?_v=1644710489828" alt="Изображение товра"></picture>
+									<picture><source srcset="images/page-top/product-1.webp" type="image/webp"><img src="images/page-top/product-1.png?_v=1644757579170" alt="Изображение товра"></picture>
 								</div>
 
 								<div class="slide__content">
@@ -156,7 +164,7 @@
 							</div>
 							<div class="slider-top__slide slide">
 								<div class="slide__image">
-									<picture><source srcset="images/page-top/product-1.webp" type="image/webp"><img src="images/page-top/product-1.png?_v=1644710489828" alt="Изображение товра"></picture>
+									<picture><source srcset="images/page-top/product-1.webp" type="image/webp"><img src="images/page-top/product-1.png?_v=1644757579170" alt="Изображение товра"></picture>
 								</div>
 								<div class="slide__content">
 									<div class="slide__title">
@@ -176,7 +184,7 @@
 							</div>
 							<div class="slider-top__slide slide">
 								<div class="slide__image">
-									<picture><source srcset="images/page-top/product-1.webp" type="image/webp"><img src="images/page-top/product-1.png?_v=1644710489828" alt="Изображение товра"></picture>
+									<picture><source srcset="images/page-top/product-1.webp" type="image/webp"><img src="images/page-top/product-1.png?_v=1644757579170" alt="Изображение товра"></picture>
 								</div>
 								<div class="slide__content">
 									<div class="slide__title">
@@ -196,7 +204,7 @@
 							</div>
 							<div class="slider-top__slide slide">
 								<div class="slide__image">
-									<picture><source srcset="images/page-top/product-1.webp" type="image/webp"><img src="images/page-top/product-1.png?_v=1644710489828" alt="Изображение товра"></picture>
+									<picture><source srcset="images/page-top/product-1.webp" type="image/webp"><img src="images/page-top/product-1.png?_v=1644757579170" alt="Изображение товра"></picture>
 								</div>
 								<div class="slide__content">
 									<div class="slide__title">
@@ -252,7 +260,7 @@
 						<div class="user-data__body">
 							<div class="user-data__wrap">
 								<div class="user-data__foto foto__image-ibg">
-									<picture><source srcset="images/user-cabinet/user-foto.webp" type="image/webp"><img src="images/user-cabinet/user-foto.jpg?_v=1644710489828" alt="фото пользователя"></picture>
+									<picture><source srcset="images/user-cabinet/user-foto.webp" type="image/webp"><img src="images/user-cabinet/user-foto.jpg?_v=1644757579170" alt="фото пользователя"></picture>
 								</div>
 								<div class="user-data__name">
 									<span>Ольга Иванова</span>
@@ -404,7 +412,7 @@
 										</a>
 									</div>
 									<div class="product-card__img">
-										<a href="#"><picture><source srcset="images/catalog/knitting-1.webp" type="image/webp"><img src="images/catalog/knitting-1.jpg?_v=1644710489828" alt="картинка"></picture></a>
+										<a href="#"><picture><source srcset="images/catalog/knitting-1.webp" type="image/webp"><img src="images/catalog/knitting-1.jpg?_v=1644757579170" alt="картинка"></picture></a>
 									</div>
 
 									<div class="product-card__title">
@@ -479,7 +487,7 @@
 										</a>
 									</div>
 									<div class="product-card__img">
-										<a href="#"><picture><source srcset="images/catalog/macrame-2.webp" type="image/webp"><img src="images/catalog/macrame-2.jpg?_v=1644710489828" alt="картинка"></picture></a>
+										<a href="#"><picture><source srcset="images/catalog/macrame-2.webp" type="image/webp"><img src="images/catalog/macrame-2.jpg?_v=1644757579170" alt="картинка"></picture></a>
 									</div>
 
 									<div class="product-card__title">
@@ -543,7 +551,7 @@
 										</a>
 									</div>
 									<div class="product-card__img">
-										<a href="#"><picture><source srcset="images/catalog/macrame-3.webp" type="image/webp"><img src="images/catalog/macrame-3.jpg?_v=1644710489828" alt="картинка"></picture></a>
+										<a href="#"><picture><source srcset="images/catalog/macrame-3.webp" type="image/webp"><img src="images/catalog/macrame-3.jpg?_v=1644757579170" alt="картинка"></picture></a>
 									</div>
 
 									<div class="product-card__title">
@@ -610,7 +618,7 @@
 										</a>
 									</div>
 									<div class="product-card__img">
-										<a href="#"><picture><source srcset="images/catalog/macrame-4.webp" type="image/webp"><img src="images/catalog/macrame-4.jpg?_v=1644710489828" alt="картинка"></picture></a>
+										<a href="#"><picture><source srcset="images/catalog/macrame-4.webp" type="image/webp"><img src="images/catalog/macrame-4.jpg?_v=1644757579170" alt="картинка"></picture></a>
 									</div>
 
 									<div class="product-card__title">
@@ -677,7 +685,7 @@
 										</a>
 									</div>
 									<div class="product-card__img">
-										<a href="#"><picture><source srcset="images/catalog/knitting-1.webp" type="image/webp"><img src="images/catalog/knitting-1.jpg?_v=1644710489828" alt="картинка"></picture></a>
+										<a href="#"><picture><source srcset="images/catalog/knitting-1.webp" type="image/webp"><img src="images/catalog/knitting-1.jpg?_v=1644757579170" alt="картинка"></picture></a>
 									</div>
 
 									<div class="product-card__title">
@@ -770,7 +778,7 @@
 													<div class="details__order-card order-card">
 														<div class="order-card__product">
 															<div class="order-card__img">
-																<a href="#"><picture><source srcset="images/catalog/macrame-1.webp" type="image/webp"><img src="images/catalog/macrame-1.jpg?_v=1644710489828" alt="фото товара"></picture></a>
+																<a href="#"><picture><source srcset="images/catalog/macrame-1.webp" type="image/webp"><img src="images/catalog/macrame-1.jpg?_v=1644757579170" alt="фото товара"></picture></a>
 															</div>
 															<div class="order-card__title">
 																<span>Шпагат Macrametr 4 мм, 100 нитей</span>
@@ -788,7 +796,7 @@
 													<div class="details__order-card order-card">
 														<div class="order-card__product">
 															<div class="order-card__img">
-																<a href="#"><picture><source srcset="images/catalog/macrame-3.webp" type="image/webp"><img src="images/catalog/macrame-3.jpg?_v=1644710489828" alt="фото товара"></picture></a>
+																<a href="#"><picture><source srcset="images/catalog/macrame-3.webp" type="image/webp"><img src="images/catalog/macrame-3.jpg?_v=1644757579170" alt="фото товара"></picture></a>
 															</div>
 															<div class="order-card__title">
 																<span>Шпагат джутовый Сибшнур 500 м</span>
@@ -806,7 +814,7 @@
 													<div class="details__order-card order-card">
 														<div class="order-card__product">
 															<div class="order-card__img">
-																<a href="#"><picture><source srcset="images/catalog/knitting-2.webp" type="image/webp"><img src="images/catalog/knitting-2.jpg?_v=1644710489828" alt="фото товара"></picture></a>
+																<a href="#"><picture><source srcset="images/catalog/knitting-2.webp" type="image/webp"><img src="images/catalog/knitting-2.jpg?_v=1644757579170" alt="фото товара"></picture></a>
 															</div>
 															<div class="order-card__title">
 																<span>Пряжа трикотажная Arachna «Слинг Принт»</span>
@@ -854,7 +862,7 @@
 													<div class="details__order-card order-card">
 														<div class="order-card__product">
 															<div class="order-card__img">
-																<a href="#"><picture><source srcset="images/catalog/macrame-1.webp" type="image/webp"><img src="images/catalog/macrame-1.jpg?_v=1644710489828" alt="фото товара"></picture></a>
+																<a href="#"><picture><source srcset="images/catalog/macrame-1.webp" type="image/webp"><img src="images/catalog/macrame-1.jpg?_v=1644757579170" alt="фото товара"></picture></a>
 															</div>
 															<div class="order-card__title">
 																<span>Шпагат Macrametr 4 мм, 100 нитей</span>
@@ -872,7 +880,7 @@
 													<div class="details__order-card order-card">
 														<div class="order-card__product">
 															<div class="order-card__img">
-																<a href="#"><picture><source srcset="images/catalog/macrame-3.webp" type="image/webp"><img src="images/catalog/macrame-3.jpg?_v=1644710489828" alt="фото товара"></picture></a>
+																<a href="#"><picture><source srcset="images/catalog/macrame-3.webp" type="image/webp"><img src="images/catalog/macrame-3.jpg?_v=1644757579170" alt="фото товара"></picture></a>
 															</div>
 															<div class="order-card__title">
 																<span>Шпагат джутовый Сибшнур 500 м</span>
@@ -890,7 +898,7 @@
 													<div class="details__order-card order-card">
 														<div class="order-card__product">
 															<div class="order-card__img">
-																<a href="#"><picture><source srcset="images/catalog/knitting-2.webp" type="image/webp"><img src="images/catalog/knitting-2.jpg?_v=1644710489828" alt="фото товара"></picture></a>
+																<a href="#"><picture><source srcset="images/catalog/knitting-2.webp" type="image/webp"><img src="images/catalog/knitting-2.jpg?_v=1644757579170" alt="фото товара"></picture></a>
 															</div>
 															<div class="order-card__title">
 																<span>Пряжа трикотажная Arachna «Слинг Принт»</span>
@@ -939,7 +947,7 @@
 													<div class="details__order-card order-card">
 														<div class="order-card__product">
 															<div class="order-card__img">
-																<a href="#"><picture><source srcset="images/catalog/macrame-1.webp" type="image/webp"><img src="images/catalog/macrame-1.jpg?_v=1644710489828" alt="фото товара"></picture></a>
+																<a href="#"><picture><source srcset="images/catalog/macrame-1.webp" type="image/webp"><img src="images/catalog/macrame-1.jpg?_v=1644757579170" alt="фото товара"></picture></a>
 															</div>
 															<div class="order-card__title">
 																<span>Шпагат Macrametr 4 мм, 100 нитей</span>
@@ -957,7 +965,7 @@
 													<div class="details__order-card order-card">
 														<div class="order-card__product">
 															<div class="order-card__img">
-																<a href="#"><picture><source srcset="images/catalog/macrame-3.webp" type="image/webp"><img src="images/catalog/macrame-3.jpg?_v=1644710489828" alt="фото товара"></picture></a>
+																<a href="#"><picture><source srcset="images/catalog/macrame-3.webp" type="image/webp"><img src="images/catalog/macrame-3.jpg?_v=1644757579170" alt="фото товара"></picture></a>
 															</div>
 															<div class="order-card__title">
 																<span>Шпагат джутовый Сибшнур 500 м</span>
@@ -975,7 +983,7 @@
 													<div class="details__order-card order-card">
 														<div class="order-card__product">
 															<div class="order-card__img">
-																<a href="#"><picture><source srcset="images/catalog/knitting-2.webp" type="image/webp"><img src="images/catalog/knitting-2.jpg?_v=1644710489828" alt="фото товара"></picture></a>
+																<a href="#"><picture><source srcset="images/catalog/knitting-2.webp" type="image/webp"><img src="images/catalog/knitting-2.jpg?_v=1644757579170" alt="фото товара"></picture></a>
 															</div>
 															<div class="order-card__title">
 																<span>Пряжа трикотажная Arachna «Слинг Принт»</span>
@@ -1032,7 +1040,7 @@
 									</div>
 									<div class="my-feedback__content">
 										<div class="my-feedback__img img__image-ibg">
-											<picture><source srcset="images/catalog/macrame-1.webp" type="image/webp"><img src="images/catalog/macrame-1.jpg?_v=1644710489828" alt="фото товара"></picture>
+											<picture><source srcset="images/catalog/macrame-1.webp" type="image/webp"><img src="images/catalog/macrame-1.jpg?_v=1644757579170" alt="фото товара"></picture>
 										</div>
 										<div class="my-feedback__text">
 											<div class="my-feedback__title">
@@ -1065,7 +1073,7 @@
 									</div>
 									<div class="my-feedback__content">
 										<div class="my-feedback__img img__image-ibg">
-											<picture><source srcset="images/catalog/knitting-2.webp" type="image/webp"><img src="images/catalog/knitting-2.jpg?_v=1644710489828" alt="фото товара"></picture>
+											<picture><source srcset="images/catalog/knitting-2.webp" type="image/webp"><img src="images/catalog/knitting-2.jpg?_v=1644757579170" alt="фото товара"></picture>
 										</div>
 										<div class="my-feedback__text">
 											<div class="my-feedback__title">
@@ -1091,7 +1099,7 @@
 					<div class="footer__body ">
 						<div class="footer__logo">
 							<a href="index.html">
-								<picture><source srcset="images/logo.webp" type="image/webp"><img src="images/logo.png?_v=1644710489828" alt="Логотип"></picture>
+								<picture><source srcset="images/logo.webp" type="image/webp"><img src="images/logo.png?_v=1644757579170" alt="Логотип"></picture>
 							</a>
 						</div>
 						<ul class="footer__list contacts-list">
@@ -1306,7 +1314,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20220213030129"></script>
+	<script src="js/app.min.js?_v=20220213160619"></script>
 </body>
 
 </html>

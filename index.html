@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css?_v=20220213030129">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220213160619">
 	<title>Главная</title>
 </head>
 
@@ -69,11 +69,11 @@
 				</div>
 				<div class="header__logo logo">
 					<a class="logo__link" href="index.html">
-						<picture><source srcset="images/logo.webp" type="image/webp"><img src="images/logo.png?_v=1644710489828" alt="Логотип"></picture>
+						<picture><source srcset="images/logo.webp" type="image/webp"><img src="images/logo.png?_v=1644757579170" alt="Логотип"></picture>
 					</a>
 				</div>
 				<div class="header__items buttons">
-					<div class="buttons__item item__input">
+					<div class="buttons__item item__inp">
 						<input class="items__search--input" type="text" placeholder="Поиск товара">
 						<button type="button">
 							<svg class="buttons__icon" width="11" height="11">
@@ -81,29 +81,37 @@
 							</svg>
 						</button>
 					</div>
-					<div class="buttons__item item__button" data-popup="#popupLogin">
-						<svg class="buttons__icon" width="15" height="15">
-							<use xlink:href="images/icons/icons.svg#user"></use>
-						</svg>
-						<a class="items__login" href="#">Войти</a>
-					</div>
-					<div class="buttons__item item__button item">
-						<div class="item__favorite-value" id="item-favorite">
-							<span>4</span>
+					<div class="buttons__links">
+						<div class="buttons__item item__button">
+							<a class="buttons__link items__login" href="#" data-popup="#popupLogin">
+								<svg class="buttons__icon" width="15" height="15">
+									<use xlink:href="images/icons/icons.svg#user"></use>
+								</svg>
+								<span class="buttons__link-span">Войти</span>
+							</a>
 						</div>
-						<svg class="item__icon" width="14" height="14">
-							<use xlink:href="images/icons/icons.svg#favorites"></use>
-						</svg>
-						<a class="item__favorite" href="user-cabinet-favorites.html">Избранное</a>
-					</div>
-					<div class="buttons__item item__button item">
-						<div class="item__cart-value" id="item-cart">
-							<span>7</span>
+						<div class="buttons__item item__button item">
+							<a class="buttons__link item__favorite" href="user-cabinet-favorites.html">
+								<div class="item__favorite-value" id="item-favorite">
+									<span>4</span>
+								</div>
+								<svg class="item__icon" width="14" height="14">
+									<use xlink:href="images/icons/icons.svg#favorites"></use>
+								</svg>
+								<span class="buttons__link-span">Избранное</span>
+							</a>
 						</div>
-						<svg class="item__icon" width="11" height="11">
-							<use xlink:href="images/icons/icons.svg#cart"></use>
-						</svg>
-						<a class="item__cart" href="user-cart.html">Корзина</a>
+						<div class="buttons__item item__button item">
+							<a class="buttons__link item__cart" href="user-cart.html">
+								<div class="item__cart-value" id="item-cart">
+									<span>7</span>
+								</div>
+								<svg class="item__icon" width="11" height="11">
+									<use xlink:href="images/icons/icons.svg#cart"></use>
+								</svg>
+								<span class="buttons__link-span">Корзина</span>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -115,7 +123,7 @@
 						<div class="slider-top__swiper">
 							<div class="slider-top__slide slide">
 								<div class="slide__image">
-									<picture><source srcset="images/page-top/product-1.webp" type="image/webp"><img src="images/page-top/product-1.png?_v=1644710489828" alt="Изображение товра"></picture>
+									<picture><source srcset="images/page-top/product-1.webp" type="image/webp"><img src="images/page-top/product-1.png?_v=1644757579170" alt="Изображение товра"></picture>
 								</div>
 								<div class="slide__content">
 									<div class="slide__title">
@@ -135,7 +143,7 @@
 							</div>
 							<div class="slider-top__slide slide">
 								<div class="slide__image">
-									<picture><source srcset="images/page-top/product-1.webp" type="image/webp"><img src="images/page-top/product-1.png?_v=1644710489828" alt="Изображение товра"></picture>
+									<picture><source srcset="images/page-top/product-1.webp" type="image/webp"><img src="images/page-top/product-1.png?_v=1644757579170" alt="Изображение товра"></picture>
 								</div>
 
 								<div class="slide__content">
@@ -156,7 +164,7 @@
 							</div>
 							<div class="slider-top__slide slide">
 								<div class="slide__image">
-									<picture><source srcset="images/page-top/product-1.webp" type="image/webp"><img src="images/page-top/product-1.png?_v=1644710489828" alt="Изображение товра"></picture>
+									<picture><source srcset="images/page-top/product-1.webp" type="image/webp"><img src="images/page-top/product-1.png?_v=1644757579170" alt="Изображение товра"></picture>
 								</div>
 								<div class="slide__content">
 									<div class="slide__title">
@@ -176,7 +184,7 @@
 							</div>
 							<div class="slider-top__slide slide">
 								<div class="slide__image">
-									<picture><source srcset="images/page-top/product-1.webp" type="image/webp"><img src="images/page-top/product-1.png?_v=1644710489828" alt="Изображение товра"></picture>
+									<picture><source srcset="images/page-top/product-1.webp" type="image/webp"><img src="images/page-top/product-1.png?_v=1644757579170" alt="Изображение товра"></picture>
 								</div>
 								<div class="slide__content">
 									<div class="slide__title">
@@ -196,7 +204,7 @@
 							</div>
 							<div class="slider-top__slide slide">
 								<div class="slide__image">
-									<picture><source srcset="images/page-top/product-1.webp" type="image/webp"><img src="images/page-top/product-1.png?_v=1644710489828" alt="Изображение товра"></picture>
+									<picture><source srcset="images/page-top/product-1.webp" type="image/webp"><img src="images/page-top/product-1.png?_v=1644757579170" alt="Изображение товра"></picture>
 								</div>
 								<div class="slide__content">
 									<div class="slide__title">
@@ -246,61 +254,61 @@
 					<div class="slider-page__slides slider-page__swiper">
 						<div class="slider-page__slide">
 							<a href="#">
-								<picture><source srcset="images/main-page-slider/product1.webp" type="image/webp"><img src="images/main-page-slider/product1.png?_v=1644710489828" alt="Изображение товра"></picture>
+								<picture><source srcset="images/main-page-slider/product1.webp" type="image/webp"><img src="images/main-page-slider/product1.png?_v=1644757579170" alt="Изображение товра"></picture>
 								<span>Пряжа Macrametr</span>
 							</a>
 						</div>
 						<div class="slider-page__slide ">
 							<a href="#">
-								<picture><source srcset="images/main-page-slider/product2.webp" type="image/webp"><img src="images/main-page-slider/product2.png?_v=1644710489828" alt="Изображение товра"></picture>
+								<picture><source srcset="images/main-page-slider/product2.webp" type="image/webp"><img src="images/main-page-slider/product2.png?_v=1644757579170" alt="Изображение товра"></picture>
 								<span>Кольца бамбук</span>
 							</a>
 						</div>
 						<div class="slider-page__slide ">
 							<a href="#">
-								<picture><source srcset="images/main-page-slider/product3.webp" type="image/webp"><img src="images/main-page-slider/product3.png?_v=1644710489828" alt="Изображение товра"></picture>
+								<picture><source srcset="images/main-page-slider/product3.webp" type="image/webp"><img src="images/main-page-slider/product3.png?_v=1644757579170" alt="Изображение товра"></picture>
 								<span>Трикотажная пряжа Zefirka</span>
 							</a>
 						</div>
 						<div class="slider-page__slide ">
 							<a href="#">
-								<picture><source srcset="images/main-page-slider/product4.webp" type="image/webp"><img src="images/main-page-slider/product4.png?_v=1644710489828" alt="Изображение товра"></picture>
+								<picture><source srcset="images/main-page-slider/product4.webp" type="image/webp"><img src="images/main-page-slider/product4.png?_v=1644757579170" alt="Изображение товра"></picture>
 								<span>Шпагат крученыйr</span>
 							</a>
 						</div>
 						<div class="slider-page__slide ">
 							<a href="">
-								<picture><source srcset="images/main-page-slider/product5.webp" type="image/webp"><img src="images/main-page-slider/product5.png?_v=1644710489828" alt="Изображение товра"></picture>
+								<picture><source srcset="images/main-page-slider/product5.webp" type="image/webp"><img src="images/main-page-slider/product5.png?_v=1644757579170" alt="Изображение товра"></picture>
 								<span>Джут «Арахна»</span>
 							</a>
 						</div>
 						<div class="slider-page__slide ">
 							<a href="#">
-								<picture><source srcset="images/main-page-slider/product1.webp" type="image/webp"><img src="images/main-page-slider/product1.png?_v=1644710489828" alt="Изображение товра"></picture>
+								<picture><source srcset="images/main-page-slider/product1.webp" type="image/webp"><img src="images/main-page-slider/product1.png?_v=1644757579170" alt="Изображение товра"></picture>
 								<span>Пряжа Macrametr</span>
 							</a>
 						</div>
 						<div class="slider-page__slide ">
 							<a href="#">
-								<picture><source srcset="images/main-page-slider/product2.webp" type="image/webp"><img src="images/main-page-slider/product2.png?_v=1644710489828" alt="Изображение товра"></picture>
+								<picture><source srcset="images/main-page-slider/product2.webp" type="image/webp"><img src="images/main-page-slider/product2.png?_v=1644757579170" alt="Изображение товра"></picture>
 								<span>Кольца бамбук</span>
 							</a>
 						</div>
 						<div class="slider-page__slide ">
 							<a href="#">
-								<picture><source srcset="images/main-page-slider/product3.webp" type="image/webp"><img src="images/main-page-slider/product3.png?_v=1644710489828" alt="Изображение товра"></picture>
+								<picture><source srcset="images/main-page-slider/product3.webp" type="image/webp"><img src="images/main-page-slider/product3.png?_v=1644757579170" alt="Изображение товра"></picture>
 								<span>Трикотажная пряжа Zefirka</span>
 							</a>
 						</div>
 						<div class="slider-page__slide ">
 							<a href="#">
-								<picture><source srcset="images/main-page-slider/product4.webp" type="image/webp"><img src="images/main-page-slider/product4.png?_v=1644710489828" alt="Изображение товра"></picture>
+								<picture><source srcset="images/main-page-slider/product4.webp" type="image/webp"><img src="images/main-page-slider/product4.png?_v=1644757579170" alt="Изображение товра"></picture>
 								<span>Шпагат крученыйr</span>
 							</a>
 						</div>
 						<div class="slider-page__slide ">
 							<a href="">
-								<picture><source srcset="images/main-page-slider/product5.webp" type="image/webp"><img src="images/main-page-slider/product5.png?_v=1644710489828" alt="Изображение товра"></picture>
+								<picture><source srcset="images/main-page-slider/product5.webp" type="image/webp"><img src="images/main-page-slider/product5.png?_v=1644757579170" alt="Изображение товра"></picture>
 								<span>Джут «Арахна»</span>
 							</a>
 						</div>
@@ -328,7 +336,7 @@
 						<div class="category__cards">
 							<div class="category__card card-category">
 								<div class="card-category__fon">
-									<picture><source srcset="images/catalog/card-1.webp" type="image/webp"><img src="images/catalog/card-1.png?_v=1644710489828" alt="фоновая картинка"></picture>
+									<picture><source srcset="images/catalog/card-1.webp" type="image/webp"><img src="images/catalog/card-1.png?_v=1644757579170" alt="фоновая картинка"></picture>
 								</div>
 								<div class="card-category__content">
 									<div class="card-category__title">
@@ -344,7 +352,7 @@
 							</div>
 							<div class="category__card card-category">
 								<div class="card-category__fon">
-									<picture><source srcset="images/catalog/card-1.webp" type="image/webp"><img src="images/catalog/card-1.png?_v=1644710489828" alt="фоновая картинка"></picture>
+									<picture><source srcset="images/catalog/card-1.webp" type="image/webp"><img src="images/catalog/card-1.png?_v=1644757579170" alt="фоновая картинка"></picture>
 								</div>
 								<div class="card-category__content">
 									<div class="card-category__title">
@@ -360,7 +368,7 @@
 							</div>
 							<div class="category__card card-category">
 								<div class="card-category__fon">
-									<picture><source srcset="images/catalog/card-1.webp" type="image/webp"><img src="images/catalog/card-1.png?_v=1644710489828" alt="фоновая картинка"></picture>
+									<picture><source srcset="images/catalog/card-1.webp" type="image/webp"><img src="images/catalog/card-1.png?_v=1644757579170" alt="фоновая картинка"></picture>
 								</div>
 								<div class="card-category__content">
 									<div class="card-category__title">
@@ -376,7 +384,7 @@
 							</div>
 							<div class="category__card card-category">
 								<div class="card-category__fon">
-									<picture><source srcset="images/catalog/card-1.webp" type="image/webp"><img src="images/catalog/card-1.png?_v=1644710489828" alt="фоновая картинка"></picture>
+									<picture><source srcset="images/catalog/card-1.webp" type="image/webp"><img src="images/catalog/card-1.png?_v=1644757579170" alt="фоновая картинка"></picture>
 								</div>
 								<div class="card-category__content">
 									<div class="card-category__title">
@@ -392,7 +400,7 @@
 							</div>
 							<div class="category__card card-category">
 								<div class="card-category__fon">
-									<picture><source srcset="images/catalog/card-1.webp" type="image/webp"><img src="images/catalog/card-1.png?_v=1644710489828" alt="фоновая картинка"></picture>
+									<picture><source srcset="images/catalog/card-1.webp" type="image/webp"><img src="images/catalog/card-1.png?_v=1644757579170" alt="фоновая картинка"></picture>
 								</div>
 								<div class="card-category__content">
 									<div class="card-category__title">
@@ -408,7 +416,7 @@
 							</div>
 							<div class="category__card card-category">
 								<div class="card-category__fon">
-									<picture><source srcset="images/catalog/card-1.webp" type="image/webp"><img src="images/catalog/card-1.png?_v=1644710489828" alt="фоновая картинка"></picture>
+									<picture><source srcset="images/catalog/card-1.webp" type="image/webp"><img src="images/catalog/card-1.png?_v=1644757579170" alt="фоновая картинка"></picture>
 								</div>
 								<div class="card-category__content">
 									<div class="card-category__title">
@@ -424,7 +432,7 @@
 							</div>
 							<div class="category__card card-category">
 								<div class="card-category__fon">
-									<picture><source srcset="images/catalog/card-1.webp" type="image/webp"><img src="images/catalog/card-1.png?_v=1644710489828" alt="фоновая картинка"></picture>
+									<picture><source srcset="images/catalog/card-1.webp" type="image/webp"><img src="images/catalog/card-1.png?_v=1644757579170" alt="фоновая картинка"></picture>
 								</div>
 								<div class="card-category__content">
 									<div class="card-category__title">
@@ -441,7 +449,7 @@
 							</div>
 							<div class="category__card card-category">
 								<div class="card-category__fon">
-									<picture><source srcset="images/catalog/card-1.webp" type="image/webp"><img src="images/catalog/card-1.png?_v=1644710489828" alt="фоновая картинка"></picture>
+									<picture><source srcset="images/catalog/card-1.webp" type="image/webp"><img src="images/catalog/card-1.png?_v=1644757579170" alt="фоновая картинка"></picture>
 								</div>
 								<div class="card-category__content">
 									<div class="card-category__title">
@@ -523,7 +531,7 @@
 				</div>
 				<div class="page-instagramm__body">
 					<div class="page-instagramm__foto page-instagramm__foto-big">
-						<picture><source srcset="images/instagramm/foto-1.webp" type="image/webp"><img src="images/instagramm/foto-1.png?_v=1644710489828" alt="фото"></picture>
+						<picture><source srcset="images/instagramm/foto-1.webp" type="image/webp"><img src="images/instagramm/foto-1.png?_v=1644757579170" alt="фото"></picture>
 						<div class="page-instagramm__icons">
 							<div class="page-instagramm__icon">
 								<a href="#">
@@ -562,7 +570,7 @@
 						</div>
 					</div>
 					<div class="page-instagramm__foto">
-						<picture><source srcset="images/instagramm/foto-2.webp" type="image/webp"><img src="images/instagramm/foto-2.png?_v=1644710489828" alt="фото"></picture>
+						<picture><source srcset="images/instagramm/foto-2.webp" type="image/webp"><img src="images/instagramm/foto-2.png?_v=1644757579170" alt="фото"></picture>
 						<div class="page-instagramm__icons">
 							<div class="page-instagramm__icon">
 								<a href="#">
@@ -583,7 +591,7 @@
 						</div>
 					</div>
 					<div class="page-instagramm__foto">
-						<picture><source srcset="images/instagramm/foto-3.webp" type="image/webp"><img src="images/instagramm/foto-3.png?_v=1644710489828" alt="фото"></picture>
+						<picture><source srcset="images/instagramm/foto-3.webp" type="image/webp"><img src="images/instagramm/foto-3.png?_v=1644757579170" alt="фото"></picture>
 						<div class="page-instagramm__icons">
 							<div class="page-instagramm__icon">
 								<a href="#">
@@ -604,7 +612,7 @@
 						</div>
 					</div>
 					<div class="page-instagramm__foto page-instagramm__foto-big">
-						<picture><source srcset="images/instagramm/foto-4.webp" type="image/webp"><img src="images/instagramm/foto-4.png?_v=1644710489828" alt="фото"></picture>
+						<picture><source srcset="images/instagramm/foto-4.webp" type="image/webp"><img src="images/instagramm/foto-4.png?_v=1644757579170" alt="фото"></picture>
 						<div class="page-instagramm__icons">
 							<div class="page-instagramm__icon">
 								<a href="#">
@@ -625,7 +633,7 @@
 						</div>
 					</div>
 					<div class="page-instagramm__foto">
-						<picture><source srcset="images/instagramm/foto-5.webp" type="image/webp"><img src="images/instagramm/foto-5.png?_v=1644710489828" alt="фото"></picture>
+						<picture><source srcset="images/instagramm/foto-5.webp" type="image/webp"><img src="images/instagramm/foto-5.png?_v=1644757579170" alt="фото"></picture>
 						<div class="page-instagramm__icons">
 							<div class="page-instagramm__icon">
 								<a href="#">
@@ -646,7 +654,7 @@
 						</div>
 					</div>
 					<div class="page-instagramm__foto">
-						<picture><source srcset="images/instagramm/foto-6.webp" type="image/webp"><img src="images/instagramm/foto-6.png?_v=1644710489828" alt="фото"></picture>
+						<picture><source srcset="images/instagramm/foto-6.webp" type="image/webp"><img src="images/instagramm/foto-6.png?_v=1644757579170" alt="фото"></picture>
 						<div class="page-instagramm__icons">
 							<div class="page-instagramm__icon">
 								<a href="#">
@@ -694,7 +702,7 @@
 					<div class="footer__body ">
 						<div class="footer__logo">
 							<a href="index.html">
-								<picture><source srcset="images/logo.webp" type="image/webp"><img src="images/logo.png?_v=1644710489828" alt="Логотип"></picture>
+								<picture><source srcset="images/logo.webp" type="image/webp"><img src="images/logo.png?_v=1644757579170" alt="Логотип"></picture>
 							</a>
 						</div>
 						<ul class="footer__list contacts-list">
@@ -909,7 +917,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20220213030129"></script>
+	<script src="js/app.min.js?_v=20220213160619"></script>
 </body>
 
 </html>
